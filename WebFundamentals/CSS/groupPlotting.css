@@ -1,0 +1,68 @@
+div
+{
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+
+.grey
+{
+    background-color: grey;
+    display: inline-block;
+    /* height: 700px;
+    width: 550px; */
+    padding: 15px;
+    text-align: center;
+}
+.red
+{
+    background-color: red;
+    display: inline-block;
+    height: 110px;
+    width: 223px;
+    margin: 15px;
+
+}
+.blue
+{
+    background-color: blue;
+    display: inline-block;
+    height: 110px;
+    width: 485px;
+    margin: 15px;
+}
+.yellow
+{
+    background-color: yellow;
+    display: inline-block;
+    height: 110px;
+    width: 135px;
+    margin: 15px;
+}
+.green
+{
+    background-color: green;
+    display: inline-block;
+    width: 455px;
+    margin: 15px;
+    padding: 15px;
+}
+.purple1
+{
+    background-color: purple;
+    /* display: inline-block; */
+    height: 110px;
+    width: 100px;
+    margin: 15px;
+    float: left;
+}
+.purple2
+{
+    background-color: purple;
+    /* display: inline-block; */
+    height: 110px;
+    width: 100px;
+    margin: 15px;
+    float: right;
+}
