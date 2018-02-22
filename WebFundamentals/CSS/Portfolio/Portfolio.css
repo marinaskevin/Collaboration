@@ -1,0 +1,70 @@
+#body
+{
+    width: 970px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+#header
+{
+    background-color: rgb(219, 219, 219);
+    display: block;
+    padding: 15px;
+}
+#mainSection
+{
+    background-color: maroon;
+}
+#selfPortrait
+{
+    display: inline-block;
+    border:5px solid grey;
+    margin: 30px;
+    background-color: black;
+    width: 400px;
+    height: 275px;
+}
+#aboutMe
+{
+    background-color: white;
+    display: inline-block;
+    width: 400px;
+    margin: 30px;
+    padding: 10px;
+    height: 275px;
+}
+#laMode
+{
+    position: relative;
+    top: -52px;
+    display: inline-block;
+    background-color: white;
+    width: 275px;
+    margin: 10px;
+    padding: 10px;
+    height: 560px;
+}
+#familyContacts
+{
+    position: relative;
+    top: -35px;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    width: 275px;
+    height: 560px;
+}
+#fiveEleven
+{
+    display: inline-block;
+    background-color: white;
+    width: 275px;
+    margin: 10px;
+    padding: 10px;
+    height: 560px;
+}
+#footer
+{
+    text-align: center;
+}
