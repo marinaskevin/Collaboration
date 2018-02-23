@@ -1,0 +1,190 @@
+#page
+{
+    width: 970px;
+    font-family: sans-serif;
+}
+#top
+{
+    color: rgb(71,71,71);
+    display: inline-block;
+}
+#globeImage
+{
+    height: 120px;
+    vertical-align: bottom;
+    position: relative;
+    top: 20px;
+}
+#headerText
+{
+    display: inline-block;
+    font-size: 45px;
+    position: relative;
+    top: 25px
+}
+#net
+{
+    color: rgb(38,102,156);
+}
+#titleBar
+{
+    color: white;
+    display: block;
+    background: linear-gradient(rgb(42,105,157), rgb(83,132,171), rgb(42,105,157));
+    padding: 5px;
+    padding-left: 20px;
+}
+#titleText
+{
+    font-weight: normal;
+    font-size: 35px
+}
+#body
+{
+    background: linear-gradient(rgb(228,228,228), white);
+}
+#sideBar
+{
+    width: 220px;
+    padding: 20px;
+    display: inline-block;
+    margin-right: 50px;
+}
+#internet
+{
+    color: rgb(215,38,38);
+}
+.importantTextSide
+{
+    color: rgb(54, 113, 163);
+}
+#watchAVideo
+{
+    background: linear-gradient(rgb(97,150,191), rgb(43,106,159));
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 220px;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+#moreResources
+{
+    background: linear-gradient(rgb(233, 171, 92), rgb(238, 117,4));
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 220px;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin-top: 5px;
+}
+#pageBreak
+{
+    height: 1px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 220px;
+}
+#ad
+{
+    background-image: url("img/ad_background.png");
+    color: white;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 2px 2px 1px black;
+}
+#adText
+{
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+#ninjaImage
+{
+    margin: 0px;
+    width: 120px;
+    position: relative;
+    top: -15px;
+}
+#adLink
+{
+    background: linear-gradient(rgb(122, 208,222), rgb(8,193,221));
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+#content
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 655px;
+}
+#upper
+{
+    display: inline-block;
+
+}
+#spacer
+{
+    display: inline-block;
+    width: 330px;
+}
+#contactInfo
+{
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+}
+.smallContact
+{
+    font-size: 10px;
+    margin: 0px;
+    display: inline-block;
+}
+#phoneNumber
+{
+    margin: 3px;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(0,192,221);
+    display: inline-block;
+}
+#pageBreak2
+{
+    height: 1px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contentHeader
+{
+    color: rgb(38,102,156);
+}
+.contentImportant
+{
+    color: rgb(2,151,173);
+}
+#contentBottom
+{
+    display: inline-block;
+    padding: 20px;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 5px 5px 0px 5px;
+    border-color: rgb(0,135,221);
+    box-shadow: 2px 0px 1px black;
+}
+#contentBottomText
+{
+    display: inline-block;
+    width: 480px;
+}

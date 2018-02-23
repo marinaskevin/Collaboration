@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="theInternet.css" />
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            <div id="top">
+                <img src="img/globe.png" alt="globe" id="globeImage">
+                <h1 id = "headerText">The Inter<span id="net">net</span></h1>
+            </div>
+            <div id="titleBar">
+                <h1 id = "titleText">The World Wide Web</h2>
+            </div>
+        </div>
+        <div id = "body">
+            <div id="sideBar">
+                <div id="links">
+                    <h3>So, What's an <span id="internet">Internet?</span></h3>
+                    <p>An <span class = "importantTextSide">Inter</span>connected <span class = "importantTextSide">Net</span>work of computers all around the world!</p>
+                    <p id="watchAVideo">WATCH A VIDEO</p>
+                    <p id = "moreResources">MORE RESOURCES</p>
+                    <div id="pageBreak"></div>
+                </div>
+                <div id="ad">
+                    <p id="adText">Reinvent your career in just 14 weeks</p>
+                    <img src="img/ninja.png" alt="ninja" id="ninjaImage">
+                    <p id="adLink">Learn more<span style="color: rgb(131,220,234)">></span><span style="color: rgb(195,238,245)">></span>></p>
+
+                </div>
+            </div>
+            <div id = "content">
+                <div id="upper">
+                    <img src="img/home.png" alt="home" style="height:20px; vertical-align: top; margin-top: 12px;">
+                    <p style="color: rgb(38,102,156); display: inline-block; vertical-align: top;">DNS</p>
+                    <div id="spacer"></div>
+                    <img src ="img/phone.png" alt="home" style = "height: 50px; display: inline-block;">
+                    <div id="contactInfo">
+                        <p class="smallContact">Mon - Fri 9 a.m. - 5 p.m. (EST)</p>
+                        <p id="phoneNumber">855.967.3787</p>
+                        <p class="smallContact">International +617.963.0555</p>
+                    </div>
+                    <div id="pageBreak2"></div>
+                </div>
+                <div id = "main">
+                    <h2 class="contentHeader">Clients and Servers</h2>
+                    <p>Computers connected to the <span class="contentImportant">Web</span> are called <b>clients</b> and <b>servers.</b></p>
+                    <ul>
+                        <li><span class="contentImportant">Clients</span> are the typical Web user's Internet-connected devices (for example, your computer connected to your Wi-Fi, or your phone conncected to your mobile network) and <span class="contentImportant">Web-accessing software</span> availible on those devices (usually a web browser like Firefox or Chrome).</li>
+                        <li><span class="contentImportant">Servers</span> are computers that store <span class="contentImportant">webpages</span>, <span class="contentImportant">sites</span>, or <span class="contentImportant">apps</span>. When a client device wants to access a webpage, a copy of the webpage is downloaded from the server onto the client machine to be displayed in the user's web browser.</li>
+                    </ul>
+                    <img src="img/client_server.jpg" alt="client/server" style="height: 100px; position: relative; left: 200px;">
+                    <h2 class="contentHeader">So What Actually Happens?</h2>
+                    <ol>
+                        <li>The browser goes to the <span class="contentImportant">DNS server</span> and finds the real adress of the <span class="contentImportant">server</span> that the website lives on.</li>
+                        <li>The browser sends an <span class="contentImportant">HTTP request</span> message to the server asking it to send a copy of the website to the client.</li>
+                        <li>if the server approves the client's request, the server sends the client a <span class="contentImportant">"200 OK" message</span>, which means "Permission granted! Here you go!", and then starts sending the website's files to the browser as a series of small chunks.</li>
+                        <li>The browser assembles the small chunks into a complete website and displays it to you!</li>
+                    </ol>
+                        <div id="contentBottom">
+                            <img src="img/html.png" alt="html" style="height: 100px;">
+                            <div id="contentBottomText">
+                                <h2 class="contentHeader">The Big 3 - HTML, CSS, JavaScript</h2>
+                                <p>While the server can process information in many different languages, the files that they serve to the client are <i>always</i> going to be some combination of HTML, CSS, and JavaScript!</p>
+                                <p>Learn more aout the Big 3 <span class="contentImportant">here</span>!</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
