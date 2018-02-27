@@ -1,0 +1,11 @@
+var num1 = 800;
+var num2 = 8.7;
+var num3 = 987;
+var num4 = 200;
+var string1 = "dojo";
+var string2 = "coding";
+var string3 = "strings";
+var bool1 = true;
+var bool2 = false;
+var unDefined;
+console.log(string1);
