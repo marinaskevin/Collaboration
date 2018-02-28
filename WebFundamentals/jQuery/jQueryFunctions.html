@@ -11,21 +11,21 @@
     <script>
         $("page").ready(function()
         {
-            $("button.goAway").click(function()
+            $("#goAway").click(function()
             {
                 $(this).parent().find("p").hide();
                 console.log("clicked");
             });
-            $("button.comeBack").click(function()
+            $("#comeBack").click(function()
             {
                 $(this).parent().find("p").show();
                 console.log("show");
             });
-            $("button.toggle").click(function()
+            $("#toggle").click(function()
             {
                 $(this).parent().find("p").toggle();
             });
-            $("button.slideDown").click(function()
+            $("#slideDown").click(function()
             {
                 if ( $(this).parent().find( "p" ).is( ":hidden" ) )
                 {
@@ -37,144 +37,166 @@
                 }
                 console.log("slideDown") 
             });
-            $("button.slideToggle").click(function()
+            $("#slideToggle").click(function()
             {
                 $(this).parent().find("p").slideToggle("slow");
             });
-            $("button.fadeIn").click(function()
+            $("#fadeIn").click(function()
             {
-                if ( $(this).parent().find( "p" ).is( ":hidden" ) )
-                {
-                    $(this).parent().find( "p" ).fadeIn( "slow" );
-                } 
-                else
-                {
-                    $(this).parent().find( "p" ).fadeOut("slow");
-                }            
+                $(this).parent().find( "p" ).fadeIn( "slow" );
             });
-            $("button.fadeToggle").click(function()
+            $("#fadeOut").click(function()
+            {
+                $(this).parent().find( "p" ).fadeOut("slow");
+            });
+            $("#fadeToggle").click(function()
             {
                 $(this).parent().find("p").fadeToggle("slow");
-            })
-            $("button.addClass").click(function()
+            });
+            $("#addClass").click(function()
             {
                $(this).parent().find("p").addClass("bigLetter"); 
-            })
-            $("button.before").click(function()
+            });
+            $("#before").click(function()
             {
-                $(this).parent().find("p").before("hello, ")
-            })
-            $("button.after").click(function()
+                $(this).parent().find("p").before("Hello? ")
+            });
+            $("#after").click(function()
             {
-                $(this).parent().find("p").after(" ok goodbye!")
-            })
-            $("button.append").click(function()
+                $(this).parent().find("p").after(" Okay, goodbye!")
+            });
+            $("#append").click(function()
             {
-                $(this).parent().find("p").append("<b>blah</b>")
-            })
-            $("button.html").click(function()
+                $(this).parent().find("p").append(" <b>YYeeess...</b>")
+            });
+            $("#html").click(function()
             {
-                $(this).parent().find("p").html("This method uses the browser's innerHTML property. Some browsers may not generate a DOM that exactly replicates the HTML source provided. For example, Internet Explorer prior to version 8 will convert all href properties on links to absolute URLs, and Internet Explorer prior to version 9 will not correctly handle HTML5 elements without the addition of a separate compatibility layer.")
-            })
-            $("button.attr").click(function()
+                $(this).parent().find("p").html("This method uses the browser's innerHTML property. Some browsers may not generate a DOM that exactly replicates the HTML source provided. For example, Internet Explorer prior to version 8 will convert all href properties on links to absolute URLs, and Internet Explorer prior to version 9 will not correctly handle HTML5 elements without the addition of a separate compatibility layer. — <i>Source: <a href='http://api.jquery.com/html/'>http://api.jquery.com/html/</a></i>");
+            });
+            $("#attr").click(function()
             {
-                $(this).parent().find("p").text($(this).attr("class"));
-            })
-            $("button.val").click(function()
+                $(this).parent().find("p").text($(this).attr("id"));
+            });
+            $("#val").click(function()
             {
                 $(this).parent().find("p").text($("#copyMe").val());
-            })
-            $("button.store").click(function()
+            });
+            $("#store").click(function()
             {
                 $(this).data("test", $("#storeMe").val());
                 console.log("stored");
-            })
-            $("button.show").click(function()
+            });
+            $("#show").click(function()
             {
-                $(this).parent().find("p").text($("button.store").data("test"));
-            })
+                $(this).parent().find("p").text($("#store").data("test"));
+            });
+            window.addEventListener("hashchange", function () {
+                window.scrollTo(window.scrollX, window.scrollY - 110);
+            });
         });
     </script>
+    <div class="navbar">
+        <a href="#goAway">Click to hide</a> |
+        <a href="#toggle">toggle</a> |
+        <a href="#slideDown">slideDown/up</a> |
+        <a href="#slideToggle">slideToggle</a> |
+        <a href="#fadeIn">fadeIn</a> |
+        <a href="#fadeOut">fadeOut</a> |
+        <a href="#fadeToggle">fadeToggle</a> |
+        <a href="#addClass">addClass</a> |
+        <a href="#before">before</a> |
+        <a href="#after">after</a> |
+        <a href="#html">html</a> |
+        <a href="#append">append</a> |
+        <a href="#attribute">attribute</a> |
+        <a href="#val">val</a> |
+        <a href="#show">show</a> |
+    </div>
     <div class="page">
         <div class="functionShower">
-            <h1>Click and hide</h1> <!--functionName-->
-            <button class="goAway">.click</button> <!--button-->
-            <button class="comeBack">.show</button>
-            <p>I'm going to dissapear</p> <!--effect--> 
+            <h1>Click to hide.</h1> <!--functionName-->
+            <button id="goAway">.click</button> <!--button-->
+            <p>I'm going to disappear!</p> <!--effect-->
+            <button id="comeBack">.show</button>
         </div>
         <div class="functionShower">
-            <h1>toggle</h1> <!--functionName-->
-            <button class="toggle">.toggle</button> <!--button-->
-            <p>I'm going to dissapear</p> <!--effect--> 
+            <h1>toggle</h1>
+            <button id="toggle">.toggle</button>
+            <p>I'm going to disappear!</p>
         </div>
         <div class="functionShower">
-            <h1>slideDown/up</h1> <!--functionName-->
-            <button class="slideDown">.slideDown</button> <!--button-->
-            <p style="background-color: blue; display: none;">I'm going to stretch</p> <!--effect--> 
+            <h1>slideDown/up</h1>
+            <button id="slideDown">.slideDown</button>
+            <p style="background-color: yellow; display: none;">I'm going to stretch!</p>
         </div>
         <div class="functionShower">
-            <h1>slidetoggle</h1> <!--functionName-->
-            <button class="slideToggle">.slidetoggle</button> <!--button-->
-            <p style="background-color: blue; display: none;">I'm going to stretch</p> <!--effect--> 
+            <h1>slidetoggle</h1>
+            <button id="slideToggle">.slideToggle</button>
+            <p style="background-color: yellow; display: none;">I'm going to stretch!</p>
         </div>
         <div class="functionShower">
-            <h1>fadeIn</h1> <!--functionName-->
-            <button class="fadeIn">.fadeIn</button> <!--button-->
-            <p style="background-color: yellow; display: none;">Hello, I faded in</p> <!--effect--> 
+            <h1>fadeIn</h1>
+            <button id="fadeIn">.fadeIn</button>
+            <p style="background-color: yellow; display: none;">Hello, I faded in.</p>
         </div>
         <div class="functionShower">
-            <h1>fadeToggle</h1> <!--functionName-->
-            <button class="fadeToggle">.fadeToggle</button> <!--button-->
-            <p style="background-color: yellow; display: none;">Hello, I faded in</p> <!--effect--> 
+            <h1>fadeOut</h1>
+            <button id="fadeOut">.fadeOut</button>
+            <p style="background-color: yellow;">Fade me out!</p>
         </div>
         <div class="functionShower">
-            <h1>addClass</h1> <!--functionName-->
-            <button class="addClass">.addClass</button> <!--button-->
-            <p>Hello, I can have larger text</p> <!--effect--> 
+            <h1>fadeToggle</h1>
+            <button id="fadeToggle">.fadeToggle</button>
+            <p style="background-color: yellow; display: none;">Hello, I faded in. Now fade me out!</p>
         </div>
         <div class="functionShower">
-            <h1>before</h1> <!--functionName-->
-            <button class="before">.before</button> <!--button-->
-            <p>goodbye</p> <!--effect--> 
+            <h1>addClass</h1>
+            <button id="addClass">.addClass</button>
+            <p>Hello, I can have larger text.</p>
+        </div>
+        <div class="functionShower">
+            <h1>before</h1>
+            <button id="before">.before</button>
+            <p>Hello!</p>
         </div>    
         <div class="functionShower">
-            <h1>after</h1> <!--functionName-->
-            <button class="after">.after</button> <!--button-->
-            <p>goodbye</p> <!--effect--> 
+            <h1>after</h1>
+            <button id="after">.after</button>
+            <p>Hello!</p>
         </div>  
         <div class="functionShower">
-            <h1>append</h1> <!--functionName-->
-            <button class="append">.append</button> <!--button-->
-            <p>blah</p> <!--effect--> 
+            <h1>append</h1>
+            <button id="append">.append</button>
+            <p>yyYES?</p>
         </div>      
         <div class="functionShower">
-            <h1>html</h1> <!--functionName-->
-            <button class="html">.html</button> <!--button-->
-            <p>What is the .html method in jQuery?</p> <!--effect--> 
+            <h1>html</h1>
+            <button id="html">.html</button>
+            <p>What is the .html method in jQuery?</p>
         </div>      
         <div class="functionShower">
-            <h1>attr</h1> <!--functionName-->
-            <button class="attr">.attr</button> <!--button-->
-            <p>What is the class of this button</p> <!--effect--> 
+            <h1>attr</h1>
+            <button id="attr">.attr</button>
+            <p>What is the id of this button?</p>
         </div>
         <div class="functionShower">
-            <h1>val</h1> <!--functionName-->
-            <button class="val">.val</button> <!--button-->
+            <h1>val</h1>
+            <button id="val">.val</button>
             <form>
                 <label for="copyMe"></label>
                 <input id="copyMe" type="text" value="">
             </form>
-            <p>What is the value of the textbox's "value" attribute?</p> <!--effect--> 
+            <p>What is the value of the textbox's "value" attribute?</p>
         </div>
         <div class="functionShower">
-            <h1>data</h1> <!--functionName-->
-            <button class="store">store</button> <!--button-->
-            <button class="show">show</button>
+            <h1>data</h1>
+            <button id="store">store</button>
+            <button id="show">show</button>
             <form>
                 <label for="storeMe"></label>
                 <input id="storeMe" type="text" value="">
             </form>
-            <p>This will show what you stored in the button</p> <!--effect--> 
+            <p>This will show what you stored in the button.</p>
         </div>
     </div>
 </body>
